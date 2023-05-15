@@ -1,17 +1,109 @@
-<!--Завдання 1. Створити html файл з формою для додавання викладача. 
-    Форма повинна містити наступні поля: Повне ім’я, стать, дата народження, 
-    email, телефон, бажаний колір фону, країна, місто, коментар.-->
+<!--Створити html файл з таблицею статистики по наступним полям: вік, стать, країна-->
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task 4</title>
 </head>
+<style>
+    table, th, td {
+        border-bottom: 1px solid #ddd;
+        border-collapse: collapse;
+    }
+    th {
+        text-align: left;
+        width: 300px;
+    }
+    tr:nth-child(even) {
+        background-color: #D6EEEE;
+    }
+</style>
 <body>
-    <h1>Prof form</h1>
-    <form>
-        <label>First Name</label>
-        <input type="text"/>
-        <label>Last Name</label>
-        <input type="text"/>
-    </form>
+    <h1>Stats</h1>
+    <table> 
+        <thead>
+            <tr>
+                <th>Вік</th>
+                <th>Стать</th>
+                <th>Країна</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+                <td>25</td>
+                <td>Чоловік</td>
+                <td>Україна</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Жінка</td>
+                <td>США</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>Чоловік</td>
+                <td>Канада</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Жінка</td>
+                <td>Німеччина</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>Чоловік</td>
+                <td>Австралія</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Жінка</td>
+                <td>Франція</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Чоловік</td>
+                <td>Іспанія</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Жінка</td>
+                <td>Італія</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>Чоловік</td>
+                <td>Великобританія</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Жінка</td>
+                <td>Японія</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Чоловік</td>
+                <td>Корея</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>Жінка</td>
+                <td>Бразилія</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Чоловік</td>
+                <td>Мексика</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Жінка</td>
+                <td>Аргентина</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>Чоловік</td>
+                <td>Швеція</td>
+            </tr>
+        </tbody>
+    </table>
 </body>     
