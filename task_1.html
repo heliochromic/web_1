@@ -1,0 +1,81 @@
+<!--Завдання 1. Створити html файл з формою для додавання викладача. 
+    Форма повинна містити наступні поля: Повне ім’я, стать, дата народження, 
+    email, телефон, бажаний колір фону, країна, місто, коментар.-->
+    <!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>task 4</title>
+    </head>
+    <body>
+        <style>
+            .form-container {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+        
+            .form-container label {
+                width: 120px;
+            }
+        
+            .form-container input,
+            .form-container select,
+            .form-container textarea {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        </style>
+        
+        <form>
+            <div class="form-container">
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" />
+                </div>
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" />
+                </div>
+                <div>
+                    <label for="gender">Gender</label>
+                    <select id="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="birth-date">Birth date</label>
+                    <input type="date" id="birth-date" />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" />
+                </div>
+                <div>
+                    <label for="phone-number">Phone number</label>
+                    <input type="number" id="phone-number" />
+                </div>
+                <div>
+                    <label for="background-color">Background color</label>
+                    <input type="color" id="background-color" />
+                </div>
+                <div>
+                    <label for="country">Country</label>
+                    <input type="text" id="country" />
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" />
+                </div>
+                <div>
+                    <label for="comments">Comments</label><br/>
+                    <textarea id="comments" rows="5" cols="42" placeholder="You can leave your comments right here"></textarea>
+                </div>
+                <div>
+                    <input type="button" value="Submit">
+                </div>
+            </div>
+        </form>
+        
+    </body>     
